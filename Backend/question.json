@@ -1,0 +1,119 @@
+[
+    {
+      "question": "What is the speed of light?",
+      "subject": "Physics",
+      "topic": "Waves",
+      "difficulty": "Easy",
+      "marks": 5
+    },
+    {
+        "question": "What is the speed of",
+        "subject": "Physics",
+        "topic": "Waves",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+        "question": "What is the speed",
+        "subject": "Physics",
+        "topic": "Waves",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+        "question": "What is the",
+        "subject": "Physics",
+        "topic": "Waves",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+        "question": "What is",
+        "subject": "Physics",
+        "topic": "Waves",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+      "question": "Describe the concept of inertia.",
+      "subject": "Physics",
+      "topic": "Mechanics",
+      "difficulty": "Medium",
+      "marks": 10
+    },
+    {
+      "question": "Describe the concept of warmhole",
+      "subject": "Physics",
+      "topic": "Mechanics",
+      "difficulty": "Medium",
+      "marks": 10
+    },
+    {
+        "question": "Describe whitehole",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+    {
+        "question": "Describe the concept of fusion.",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+
+    {
+        "question": "Describe the concept of Microphone",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+    {
+        "question": "Describe the concept of Fision",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+    {
+        "question": "Describe the concept of ThermoDynamics",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+
+    {
+        "question": "How did our Universe begin and how will it end",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Hard",
+        "marks": 15
+    },
+
+    {
+        "question": "Describe the concept of blackHole",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Hard",
+        "marks": 15
+    },
+    {
+        "question": "What is dark energy and why is the Universe expanding ever faster?",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Hard",
+        "marks": 15
+    },
+
+    {
+        "question": "Describe the expansion of the universe ",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Hard",
+        "marks": 15
+    }
+]
+  
