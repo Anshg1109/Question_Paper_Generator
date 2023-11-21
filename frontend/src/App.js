@@ -27,26 +27,46 @@ function App() {
       console.error('Failed to generate question paper:', error);
     }
   };
-
-  const generatePDF = (formattedData) => {
-    const doc = new jsPDF();
-    let yPos = 10;
-    doc.setFontSize(12);
-    doc.text('Question Paper', 10, yPos);
-    yPos += 10;
-  
-    formattedData.forEach((item, index) => {
-      yPos += 10;
-      doc.text(`Q.${index + 1}: ${item.question}`, 10, yPos);
-      const marksTextWidth = doc.getTextWidth(`Marks: ${item.marks}`);
-      const pageWidth = doc.internal.pageSize.width;
-      const marksXPos = pageWidth - marksTextWidth - 10;
-      doc.text(`Marks: ${item.marks}`, marksXPos, yPos);
-      yPos += 15;
-    });
-  
-    doc.save('question-paper.pdf');
+  const resetRequirements = () => {
+    setQuestionPaper([]); // Reset question paper
+    setShowPDFButton(false); // Hide PDF button
+    setTotalMarks(''); // Reset total marks
+    setEasy(''); // Reset easy percentage
+    setMedium(''); // Reset medium percentage
+    setHard(''); // Reset hard percentage
   };
+  const generatePDF = (formattedData) => {
+  const doc = new jsPDF();
+  doc.setFontSize(12);
+
+  // Calculate the width of the "Question Paper" text
+  const questionPaperText = 'Question Paper';
+  const textWidth = doc.getTextWidth(questionPaperText);
+  const pageWidth = doc.internal.pageSize.width;
+
+  // Calculate X position to center align the text
+  const xPos = (pageWidth - textWidth) / 2;
+
+  // Set Y position for the text
+  let yPos = 10;
+
+  // Add the "Question Paper" heading
+  doc.text(questionPaperText, xPos, yPos);
+  yPos += 20; // Increase yPos for spacing
+
+  // Iterate through the formatted data
+  formattedData.forEach((item, index) => {
+    doc.text(`Q.${index + 1}: ${item.question}`, 10, yPos);
+    const marksTextWidth = doc.getTextWidth(`Marks: ${item.marks}`);
+    const marksXPos = pageWidth - marksTextWidth - 10;
+    doc.text(`Marks: ${item.marks}`, marksXPos, yPos);
+    yPos += 15; // Increase yPos for spacing between items
+  });
+
+  doc.save('question-paper.pdf');
+  resetRequirements();
+};
+
 
   return (
     <div className='container'>

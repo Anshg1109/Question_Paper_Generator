@@ -7,56 +7,106 @@
       "marks": 5
     },
     {
-        "question": "What is the speed of",
+      "question": "How does a mirror form an image?",
+      "subject": "Physics",
+      "topic": "Waves",
+      "difficulty": "Easy",
+      "marks": 5
+    },
+    {
+        "question": "Can gravity form waves?",
         "subject": "Physics",
         "topic": "Waves",
         "difficulty": "Easy",
         "marks": 5
     },
     {
-        "question": "What is the speed",
+        "question": "Does sound travel faster in space?",
         "subject": "Physics",
         "topic": "Waves",
         "difficulty": "Easy",
         "marks": 5
     },
     {
-        "question": "What is the",
+        "question": "Does the influence of gravity extend out forever?",
+        "subject": "Physics",
+        "topic": "Space",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+        "question": "Are there different types of black holes?",
         "subject": "Physics",
         "topic": "Waves",
         "difficulty": "Easy",
         "marks": 5
     },
     {
-        "question": "What is",
+        "question": "What is the formula for kinetic energy?",
         "subject": "Physics",
-        "topic": "Waves",
+        "topic": "Mechanics",
         "difficulty": "Easy",
         "marks": 5
     },
     {
-      "question": "Describe the concept of inertia.",
+        "question": "What is the nucleus of an atom composed of?",
+        "subject": "Physics",
+        "topic": "Nuclear Physics",
+        "difficulty": "Easy",
+        "marks": 5
+    },
+    {
+      "question": "Describe the concept of inertia.?",
       "subject": "Physics",
       "topic": "Mechanics",
       "difficulty": "Medium",
       "marks": 10
     },
     {
-      "question": "Describe the concept of warmhole",
+      "question": "Describe the concept of warmhole?",
       "subject": "Physics",
       "topic": "Mechanics",
       "difficulty": "Medium",
       "marks": 10
     },
     {
-        "question": "Describe whitehole",
+      "question": "What is the relationship between time dilation and length contraction?",
+      "subject": "Physics",
+      "topic": "Relativity",
+      "difficulty": "Medium",
+      "marks": 10
+    },
+    {
+        "question": "Describe whitehole?",
         "subject": "Physics",
         "topic": "Mechanics",
         "difficulty": "Medium",
         "marks": 10
     },
     {
-        "question": "Describe the concept of fusion.",
+        "question": "Describe the concept of fusion.?",
+        "subject": "Physics",
+        "topic": "Nuclear Physics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+
+    {
+        "question": "Describe the concept of Microphone?",
+        "subject": "Physics",
+        "topic": "Mechanics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+    {
+        "question": "Describe the concept of Fision?",
+        "subject": "Physics",
+        "topic": "Nuclear Physics",
+        "difficulty": "Medium",
+        "marks": 10
+    },
+    {
+        "question": "Describe the concept of ThermoDynamics?",
         "subject": "Physics",
         "topic": "Mechanics",
         "difficulty": "Medium",
@@ -64,39 +114,17 @@
     },
 
     {
-        "question": "Describe the concept of Microphone",
+        "question": "How did our Universe begin and how will it end?",
         "subject": "Physics",
-        "topic": "Mechanics",
-        "difficulty": "Medium",
-        "marks": 10
-    },
-    {
-        "question": "Describe the concept of Fision",
-        "subject": "Physics",
-        "topic": "Mechanics",
-        "difficulty": "Medium",
-        "marks": 10
-    },
-    {
-        "question": "Describe the concept of ThermoDynamics",
-        "subject": "Physics",
-        "topic": "Mechanics",
-        "difficulty": "Medium",
-        "marks": 10
-    },
-
-    {
-        "question": "How did our Universe begin and how will it end",
-        "subject": "Physics",
-        "topic": "Mechanics",
+        "topic": "Cosmology",
         "difficulty": "Hard",
         "marks": 15
     },
 
     {
-        "question": "Describe the concept of blackHole",
+        "question": "Describe the concept of blackHole?",
         "subject": "Physics",
-        "topic": "Mechanics",
+        "topic": "Cosmology",
         "difficulty": "Hard",
         "marks": 15
     },
@@ -109,9 +137,16 @@
     },
 
     {
-        "question": "Describe the expansion of the universe ",
+        "question": "Describe the expansion of the universe?",
         "subject": "Physics",
-        "topic": "Mechanics",
+        "topic": "Quantum",
+        "difficulty": "Hard",
+        "marks": 15
+    },
+    {
+        "question": "What is the difference between electric and magnetic fields?",
+        "subject": "Physics",
+        "topic": "Electromagnetism",
         "difficulty": "Hard",
         "marks": 15
     }
