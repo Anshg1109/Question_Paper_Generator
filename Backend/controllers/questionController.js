@@ -15,10 +15,10 @@ const questionController = {
       const easyValue = parseInt(easy);
       const mediumValue = parseInt(medium);
       const hardValue = parseInt(hard);
-
+      const total = easyValue + mediumValue + hardValue
       // Ensure these values are valid numbers before proceeding
-      if (isNaN(totalMarksValue) || isNaN(easyValue) || isNaN(mediumValue) || isNaN(hardValue)) {
-        return res.status(400).json({ error: 'Invalid parameters' });
+      if (isNaN(totalMarksValue) || isNaN(easyValue) || isNaN(mediumValue) || isNaN(hardValue) || (totalMarks != total)) {
+        return res.status(400).json({ error: 'Invalid parameters, Check the parameters again' });
       }
 
       // Retrieve questions from the model
