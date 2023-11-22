@@ -9,6 +9,7 @@ function App() {
   const [hard, setHard] = useState('');
   const [questionPaper, setQuestionPaper] = useState([]);
   const [showPDFButton, setShowPDFButton] = useState(false);
+  const [error, setError] = useState('');
 
   const generateQuestionPaper = async () => {
     try {
@@ -16,16 +17,18 @@ function App() {
       const data = await response.json();
 
       if (!response.ok) {
-        alert(data.error);
+        // alert(data.error);
         throw new Error(data.error);
       }
 
       const formattedData = data.questionPaper.map(({ question, marks }) => ({ question, marks }));
       setQuestionPaper(formattedData);
       setShowPDFButton(true); // Show PDF button after question paper is generated
+      setError('');
     } catch (error) {
-      console.error('Failed to generate question paper:', error);
-    }
+      setError(`Failed to generate question paper: ${error.message}`);
+      setQuestionPaper([]); 
+      setShowPDFButton(false);    }
   };
   const resetRequirements = () => {
     setQuestionPaper([]); // Reset question paper
@@ -85,7 +88,9 @@ function App() {
           <button className='download-btn' onClick={() => generatePDF(questionPaper)}>Download PDF</button>
         )}
       </div>
-      {questionPaper.length > 0 && (
+      {error ? (
+        <div className="error-message">{error}</div>
+      ) : (questionPaper.length > 0 && (
         <div className="questions">
           <h2>Question Paper</h2>
           <table className="question-table">
@@ -107,7 +112,7 @@ function App() {
             </tbody>
           </table>
         </div>
-      )}
+      ))}
     </div>
   );
 }
