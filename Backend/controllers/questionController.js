@@ -17,7 +17,7 @@ const questionController = {
       const hardValue = parseInt(hard);
       const total = easyValue + mediumValue + hardValue
       // Ensure these values are valid numbers before proceeding
-      if (isNaN(totalMarksValue) || isNaN(easyValue) || isNaN(mediumValue) || isNaN(hardValue) || (totalMarks != total)) {
+      if (isNaN(totalMarksValue) || isNaN(easyValue) || isNaN(mediumValue) || isNaN(hardValue) || (total != 100)) {
         return res.status(400).json({ error: 'Invalid parameters, Check the parameters again' });
       }
 
@@ -39,7 +39,7 @@ const questionController = {
 
       res.status(200).json({ questionPaper });
     } catch (err) {
-      res.status(500).json({ error: 'Failed to generate question paper' });
+      res.status(500).json({ error: err.message });
     }
   }
 )};

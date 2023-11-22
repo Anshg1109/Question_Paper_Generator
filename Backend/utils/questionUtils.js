@@ -3,7 +3,7 @@
 const questionUtils = {
     generateQuestionPaper: (questions, totalMarks, distribution) => {
         const questionPaper = [];
-
+        let remainingMarks = totalMarks;
         // Calculate the marks required for each difficulty level
         const easyMarks = (distribution.easy / 100) * totalMarks;
         const mediumMarks = (distribution.medium / 100) * totalMarks;
@@ -24,7 +24,7 @@ const questionUtils = {
               break; // Stop if total selected marks reach the required marks
             }
           }
-    
+          remainingMarks -= totalSelectedMarks;
           return selectedQuestions;
         };
     
@@ -50,13 +50,18 @@ const questionUtils = {
           hardQuestions,
           hardMarks
         );
-    
-        questionPaper.push(...selectedEasyQuestions);
-        questionPaper.push(...selectedMediumQuestions);
-        questionPaper.push(...selectedHardQuestions);
-    
-        return questionPaper;
-      },
+
+        if(remainingMarks === 0){
+          questionPaper.push(...selectedEasyQuestions);
+          questionPaper.push(...selectedMediumQuestions);
+          questionPaper.push(...selectedHardQuestions);
+  
+          return questionPaper;
+        }else {
+            throw new Error('This requierment could not be fulfilled with available Questions Bank');
+          }
+        
+        },
     };
 
 
