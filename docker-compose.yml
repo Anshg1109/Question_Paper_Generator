@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    image: my-frontend-app:latest
+    ports:
+      - "80:80"  
+    networks:
+      - my-network  
+
+  backend:
+    image: my-backend-app:latest
+    ports:
+      - "3001:3001"  
+    networks:
+      - my-network  
+
+networks:
+  my-network:
+    driver: bridge
